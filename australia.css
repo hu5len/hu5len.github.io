@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body,
+html {
+    height: 100%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("header-image.jpg");
+    height: 35%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    font-size: 40px;
+    transform: translate(-20%, 0);
+}
+
+hr {
+    color: white;
+    position: relative;
+    top: 90px;
+    width: 80%;
+}
+
+.header-text {
+    font-family: 'Lobster', sans-serif;
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+q {
+    font-size: 25px;
+}
+
+#quote {
+    position: absolute;
+    left: 85%;
+}
+footer{
+    margin-top: 30px;
+    height: 10%;
+    background-color: #76A797;
+}
+.slider-section{
+  margin-top: 30px;
+  position: relative;
+  top: 25%;
+  left: 25%;
+  transform: translate(-15%,-50%);
+  width: 100%;
+}
+h1{
+  position: relative;
+  left: 33%;
+  font-family: 'Lobster', sans-serif;
+  margin-bottom: 30px;
+}
+.slider{
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 3rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 80%;
+}
+.item{
+  width: 600px;
+  height: auto;
+  border-radius: 20px;
+}
+.cuisine{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.cuisine img{
+  width: 300px;
+}
