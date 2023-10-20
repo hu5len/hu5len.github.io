@@ -53,9 +53,6 @@ footer{
     margin-top: 30px;
     height: 10%;
     background-color: #76A797;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
 }
 .slider-section{
   margin-top: 30px;
@@ -87,10 +84,23 @@ h1{
   height: auto;
   border-radius: 20px;
 }
-.cuisine{
+.cuisine {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
 }
-.cuisine img{
-  width: 300px;
+
+figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.cuisine img {
+  max-width: 100%;
+  height: auto;
+}
+figcaption {
+  font-size: 14px;
+  margin-top: 10px;
 }
